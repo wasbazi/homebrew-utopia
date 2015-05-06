@@ -13,7 +13,7 @@ class Utopia < Formula
   devel do
     version '0.8.0'
     url "https://s3.amazonaws.com/aetna-utopia/#{version}/utopia_#{version}_darwin_amd64.tar.gz"
-    sha1 'bff9f0883b0a7086d5ef02613066cbbdfb1f0550'
+    sha1 '546ca6e09583f74c24cc0a0ac3c3d5c28693132b'
   end
 
   depends_on :arch => :intel
@@ -25,7 +25,7 @@ class Utopia < Formula
     system "mv", bin/"utopia_#{version}_darwin_amd64", bin/"utopia"
   end
 
-  def caveats; <--EOS.undent
+  def caveats; <<-EOS.undent
   	To enable bash completions, you will need to add this to you .bashrc:
   		PROG=utopia source #{HOMEBREW_PREFIX}/etc/bash_completion.d/utopia_autocomplete.sh
 
