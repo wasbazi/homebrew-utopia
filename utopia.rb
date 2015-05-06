@@ -13,15 +13,15 @@ class Utopia < Formula
   devel do
     version '0.8.0'
     url "https://s3.amazonaws.com/aetna-utopia/#{version}/utopia_#{version}_darwin_amd64.tar.gz"
-    sha1 '3726c6eb42da766915eae298f8ac105f8ba8d2e8'
+    sha1 '57534027dd7a55a0011fde802a3e0f7f9d73de4b'
   end
 
   depends_on :arch => :intel
 
   def install
     bin.install "utopia_#{version}_darwin_amd64"
-	bash_completion.install "utopia_autocomplete.sh"
-	zsh_completion.install "utopia_autocomplete.zsh"
+    bash_completion.install "autocomplete/utopia_autocomplete.sh"
+    zsh_completion.install "autocomplte/utopia_autocomplete.zsh"
     system "mv", bin/"utopia_#{version}_darwin_amd64", bin/"utopia"
   end
 
