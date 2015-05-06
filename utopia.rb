@@ -13,7 +13,7 @@ class Utopia < Formula
   devel do
     version '0.8.0'
     url "https://s3.amazonaws.com/aetna-utopia/#{version}/utopia_#{version}_darwin_amd64.tar.gz"
-    sha1 '07f0a8391cef1b4b90142b6a5db1e9f0e410a220'
+    sha1 '8050a6e45952f9cf5c0cb74f88683d6c40cf3842'
   end
 
   depends_on :arch => :intel
@@ -31,7 +31,7 @@ class Utopia < Formula
 
   To enable zsh completion, you will need to add this your ./zshrc:
     PROG=utopia source #{HOMEBREW_PREFIX}/share/zsh/site-functions/utopia_autocomplete.sh
-  [0;36m==>[0m
+  [0;36m==>[0m[1;37m Completion[0m
   EOS
   end
 end
