@@ -4,10 +4,10 @@ class Utopia < Formula
   homepage 'http://www.utopianapp.com'
 
   stable do
-    version '0.11.1'
+    version '0.11.2'
     @@file = "utopia_#{version}_darwin_amd64"
     url "https://s3.amazonaws.com/aetna-utopia/#{version}/utopia_#{version}_darwin_amd64.tar.gz"
-    sha1 'ce47f9a91c18cbe21522706570c8814f7a8b5e28'
+    sha1 '1d5392ba0ef12b27586c59efa23dcdab931a2ae1'
   end
 
   devel do
