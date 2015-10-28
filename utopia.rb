@@ -4,10 +4,10 @@ class Utopia < Formula
   homepage 'http://www.utopianapp.com'
 
   stable do
-    version '0.11.3'
-    @@file = "utopia_#{version}_darwin_amd64"
-    url "https://s3.amazonaws.com/aetna-utopia/#{version}/utopia_#{version}_darwin_amd64.tar.gz"
-    sha1 '53d4918eda476633b1b5e2106604c92e86929b9c'
+	version '0.11.5'
+	@@file = "utopia_#{version}_darwin_amd64"
+	url "https://s3.amazonaws.com/aetna-utopia/#{version}/utopia_#{version}_darwin_amd64.tar.gz"
+	sha1 'fa2870eb09ef17dbaf0118d6660e89dbeca6b77c'
   end
 
   devel do
@@ -19,18 +19,18 @@ class Utopia < Formula
   depends_on :arch => :intel
 
   def install
-    bin.install "utopia_#{version}_darwin_amd64"
-    bash_completion.install "autocomplete/utopia_autocomplete.sh"
-    zsh_completion.install "autocomplete/utopia_autocomplete.zsh"
-    system "mv", bin/"utopia_#{version}_darwin_amd64", bin/"utopia"
+	bin.install "utopia_#{version}_darwin_amd64"
+	bash_completion.install "autocomplete/utopia_autocomplete.sh"
+	zsh_completion.install "autocomplete/utopia_autocomplete.zsh"
+	system "mv", bin/"utopia_#{version}_darwin_amd64", bin/"utopia"
   end
 
   def caveats; <<-EOS.undent
   To enable bash completions, you will need to add this to you .bashrc:
-    PROG=utopia source #{HOMEBREW_PREFIX}/etc/bash_completion.d/utopia_autocomplete.sh
+	PROG=utopia source #{HOMEBREW_PREFIX}/etc/bash_completion.d/utopia_autocomplete.sh
 
   To enable zsh completion, you will need to add this your ./zshrc:
-    PROG=utopia source #{HOMEBREW_PREFIX}/share/zsh/site-functions/utopia_autocomplete.zsh
+	PROG=utopia source #{HOMEBREW_PREFIX}/share/zsh/site-functions/utopia_autocomplete.zsh
   [0;36m==>[0m[1;37m Completion[0m
   EOS
   end
