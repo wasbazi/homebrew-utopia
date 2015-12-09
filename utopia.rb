@@ -7,7 +7,7 @@ class Utopia < Formula
 	version '0.11.10'
 	@@file = "utopia_#{version}_darwin_amd64"
 	url "https://s3.amazonaws.com/aetna-utopia/#{version}/utopia_#{version}_darwin_amd64.tar.gz"
-	sha1 'e8c6403297a0b915d1f27d299f616ec8a58dcded'
+	sha1 '4451559bf9f0c290d58ec8a080f57327122bdccc'
   end
 
   devel do
