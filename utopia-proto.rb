@@ -1,13 +1,13 @@
 require 'formula'
 
-class UtopiaProto < Formula
+class Utopia < Formula
   homepage 'http://www.utopianapp.com'
 
   stable do
-	version '0.0.0'
-	@@file = "utopia_#{version}_darwin_amd64"
+	version '0.0.1'
+	@@file = "utopia-proto_#{version}_darwin_amd64"
 	url "https://s3.amazonaws.com/aetna-utopia/utopia-proto/#{version}/utopia-proto_#{version}_darwin_amd64.tar.gz"
-	sha1 '2e6de4f98a3ec133c642c1ca75bc7321bb4b915f'
+	sha1 ''
   end
 
   devel do
