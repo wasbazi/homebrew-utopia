@@ -1,6 +1,6 @@
 require 'formula'
 
-class Utopia < Formula
+class UtopiaProto < Formula
   homepage 'http://www.utopianapp.com'
 
   stable do
